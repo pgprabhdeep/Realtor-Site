@@ -1,146 +1,138 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #333;
   background: #fff;
+  color: #111;
+  scroll-behavior: smooth;
 }
 
 .hero {
-  position: relative;
+  background: url('Hero.jpg.PNG') center center / cover no-repeat;
   height: 100vh;
-  overflow: hidden;
-  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
   color: white;
+  text-shadow: 2px 2px 4px #000;
 }
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.hero .logo {
   position: absolute;
-  z-index: -2;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-.logo {
-  height: 60px;
-  margin: 20px;
+  top: 20px;
+  left: 20px;
+  width: 80px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-nav ul {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 40px;
 }
 
 nav a {
-  color: white;
-  font-weight: bold;
+  color: #00d0ff;
+  margin-left: 20px;
   text-decoration: none;
-  font-size: 1.1rem;
-}
-
-.hero-text {
-  margin-top: 20vh;
+  font-weight: bold;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 3.5em;
+  margin: 0;
 }
 
 .hero-text p {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+  font-size: 1.5em;
+  max-width: 400px;
 }
 
-.hero-text button {
-  padding: 12px 24px;
-  font-size: 1rem;
-  background: #25D366;
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-section {
+.services {
+  background: #f9f9f9;
   padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
   text-align: center;
 }
 
-.cards {
+.service-boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 40px;
   margin-top: 30px;
 }
 
-.card {
-  background: #f5f5f5;
-  padding: 30px;
-  border-radius: 8px;
-  width: 280px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  width: 300px;
 }
 
-#about .portrait {
-  width: 180px;
-  border-radius: 100px;
-  margin-top: 20px;
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
 }
 
-form {
+.about .portrait {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.contact {
+  background: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   max-width: 500px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-form input, form textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  resize: vertical;
-}
-
-form button {
+.contact input,
+.contact textarea {
   padding: 12px;
-  font-size: 1rem;
-  background: #007BFF;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.contact button {
+  background: #007bff;
   color: white;
+  padding: 12px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-size: 1em;
   cursor: pointer;
+}
+
+.contact button:hover {
+  background: #0056b3;
+}
+
+.contact-links {
+  margin-top: 30px;
+  font-size: 1.1em;
+}
+
+.contact-links a {
+  color: #007bff;
+  text-decoration: none;
 }
 
 footer {
   background: #111;
-  color: #ccc;
-  text-align: center;
+  color: white;
   padding: 20px;
-  font-size: 0.9rem;
+  text-align: center;
 }

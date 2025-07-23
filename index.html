@@ -4,89 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prabh Gill | Calgary Realtor</title>
-
-  <!-- SEO Tags -->
-  <meta name="description" content="Top Calgary Realtor helping you buy, sell, and invest in real estate with confidence. Book a free consultation today." />
-  <meta name="keywords" content="Calgary Realtor, Real Estate Calgary, Buy Home Calgary, Sell Home Calgary, Prabh Gill Realtor" />
-  <meta name="author" content="Prabhdeep Singh Gill" />
-  <link rel="icon" href="Logo.png.PNG" type="image/png" />
-
-  <!-- Structured Data for SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Prabh Gill",
-    "url": "https://prabhgillrealtor.ca",
-    "logo": "https://prabhgillrealtor.ca/Logo.png.PNG",
-    "image": "https://prabhgillrealtor.ca/portrait-placeholder.jpg.JPG",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Calgary",
-      "addressRegion": "AB",
-      "addressCountry": "Canada"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-403-714-1286",
-      "contactType": "Customer Service",
-      "email": "pgprabhdeep@gmail.com"
-    }
-  }
-  </script>
-
-  <!-- Google Analytics / Ads Tag -->
+  <meta name="description" content="Top Calgary Realtor helping you buy, sell, and invest with confidence. Contact Prabh Gill for real estate in Calgary and surrounding areas." />
+  <meta name="keywords" content="Calgary Realtor, Prabh Gill, Real Estate Calgary, Buy Home Calgary, Sell Home Calgary, Calgary Real Estate Agent, Chestermere, Airdrie, Okotoks" />
+  <meta name="author" content="Prabh Gill">
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Google Ads Conversion Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17303899256"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-17303899256');
   </script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
   <header class="hero">
-    <img src="Logo.png.PNG" class="logo" alt="Logo" />
+    <img src="Logo.png" alt="Prabh Gill Realtor Logo" class="logo" />
     <nav>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
     <div class="hero-text">
-      <h1>Your<br />Trusted<br />Calgary<br />Realtor</h1>
+      <h1>Your Trusted Calgary Realtor</h1>
       <p>Guiding you home — buy, sell, and invest with confidence.</p>
     </div>
+    <img src="Hero.jpg" alt="Calgary Skyline" class="hero-image" />
   </header>
 
-  <section class="services" id="services">
+  <section id="services" class="services">
     <h2>How I Can Help</h2>
-    <div class="service-boxes">
-      <div class="box">
-        <h3>🏠 Buy a Home</h3>
-        <p>Neighbourhood expertise and honest advice—so you never overpay.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Buy a Home</h3>
+        <p>Local market knowledge and expert advice to get your dream home—without overpaying.</p>
       </div>
-      <div class="box">
-        <h3>💼 Sell with Confidence</h3>
-        <p>Strategic pricing, pro photography, and marketing that moves offers.</p>
+      <div class="card">
+        <h3>Sell with Confidence</h3>
+        <p>Strategic pricing, pro photography, and top-tier marketing that gets offers fast.</p>
       </div>
-      <div class="box">
-        <h3>📊 Free Home Value</h3>
-        <p>Curious what your property is worth? Request a no-obligation report.</p>
+      <div class="card">
+        <h3>Free Home Value</h3>
+        <p>Request a free home value report—no strings attached.</p>
       </div>
     </div>
   </section>
 
-  <section class="about" id="about">
+  <section id="about" class="about">
     <h2>Meet Prabh Gill</h2>
-    <img src="portrait-placeholder.jpg.JPG" alt="Prabh Gill" class="portrait" />
-    <p>I’m a full-time REALTOR® focused on delivering clear advice, data-driven pricing, and skilled negotiation. Whether you're buying your first home or upgrading, I make the process smooth and exceptional.</p>
+    <div class="about-content">
+      <img src="portrait-placeholder.jpg" alt="Prabh Gill Portrait" />
+      <p>I’m a full-time REALTOR® helping clients across Calgary and surrounding communities. My approach is based on honest advice, data-driven pricing, and skilled negotiation. Whether it’s your first home or your next investment—I’ll guide you every step of the way.</p>
+    </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section id="contact" class="contact">
     <h2>Get in Touch</h2>
     <form name="contact" method="POST" data-netlify="true">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -95,19 +71,15 @@
       <textarea name="message" placeholder="How can I help?" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-
-    <div class="contact-links">
-      <p>
-        📞 <a href="tel:+14037141286">403‑714‑1286</a><br />
-        📧 <a href="mailto:pgprabhdeep@gmail.com">pgprabhdeep@gmail.com</a><br />
-        💬 <a href="https://wa.me/14037141286" target="_blank">Message me on WhatsApp</a>
-      </p>
+    <div class="contact-info">
+      <p><strong>📞</strong> <a href="tel:4037141286">403-714-1286</a></p>
+      <p><strong>📧</strong> <a href="mailto:pgprabhdeep@gmail.com">pgprabhdeep@gmail.com</a></p>
+      <p><strong>💬</strong> <a href="https://wa.me/14037141286" target="_blank">Message me on WhatsApp</a></p>
     </div>
   </section>
 
   <footer>
-    © 2025 PrabhGillRealtor.ca
+    <p>© 2025 PrabhGillRealtor.ca</p>
   </footer>
-
 </body>
 </html>

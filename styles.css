@@ -1,98 +1,101 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f7f7f7;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  background: #f9f9f9;
 }
 
 .hero {
-  background: url('hero.jpg') no-repeat center center/cover;
-  height: 100vh;
-  position: relative;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: cover;
+  background-position: center;
   text-align: center;
-}
-
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
+  color: #fff;
+  padding: 80px 20px 60px;
+  position: relative;
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 1rem;
+  width: 120px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-nav {
-  margin-top: 1rem;
+.hero h1 {
+  font-size: 3em;
+  margin: 20px 0 10px;
+}
+
+.hero p {
+  font-size: 1.3em;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 nav a {
-  color: #00bfff;
+  color: #fff;
+  margin: 0 15px;
+  font-weight: 600;
   text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
 }
 
-section {
-  padding: 2rem 1rem;
-  max-width: 900px;
+main {
+  max-width: 1100px;
   margin: auto;
-  background: #fff;
-  margin-top: 2rem;
-  border-radius: 8px;
+  padding: 40px 20px;
 }
 
-.service {
-  margin-bottom: 1.5rem;
+.services, .about, .contact {
+  margin-bottom: 60px;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.service, .contact-info {
+  margin-bottom: 20px;
 }
 
 .portrait {
   width: 200px;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  max-width: 500px;
 }
 
 input, textarea {
-  padding: 10px;
-  font-size: 1rem;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  font-size: 1em;
+  border-radius: 5px;
 }
 
 button {
-  background: #007bff;
-  color: #fff;
-  border: none;
   padding: 12px;
-  font-size: 1rem;
-  border-radius: 6px;
+  font-size: 1em;
+  background: #0057b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.footer {
+button:hover {
+  background: #00449e;
+}
+
+footer {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #777;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  font-size: 0.9em;
 }

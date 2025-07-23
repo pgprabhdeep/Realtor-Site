@@ -3,12 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prabh Gill | Calgary Luxury Realtor</title>
-  <meta name="description" content="Top-rated Calgary Realtor helping you buy, sell, or invest in real estate across Calgary and surrounding areas. Contact Prabh Gill today.">
-  <meta name="keywords" content="Calgary Realtor, Buy Home Calgary, Sell Home Calgary, Calgary Real Estate, Realtor in Calgary, Prabh Gill Realtor">
-  <meta name="author" content="Prabh Gill">
+  <title>Prabh Gill | Calgary Realtor</title>
 
-  <!-- Google Analytics & Conversion Tag -->
+  <!-- SEO Tags -->
+  <meta name="description" content="Top Calgary Realtor helping you buy, sell, and invest in real estate with confidence. Book a free consultation today." />
+  <meta name="keywords" content="Calgary Realtor, Real Estate Calgary, Buy Home Calgary, Sell Home Calgary, Prabh Gill Realtor" />
+  <meta name="author" content="Prabhdeep Singh Gill" />
+  <link rel="icon" href="Logo.png.PNG" type="image/png" />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Prabh Gill",
+    "url": "https://prabhgillrealtor.ca",
+    "logo": "https://prabhgillrealtor.ca/Logo.png.PNG",
+    "image": "https://prabhgillrealtor.ca/portrait-placeholder.jpg.JPG",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calgary",
+      "addressRegion": "AB",
+      "addressCountry": "Canada"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-403-714-1286",
+      "contactType": "Customer Service",
+      "email": "pgprabhdeep@gmail.com"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics / Ads Tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17303899256"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,72 +44,70 @@
     gtag('config', 'AW-17303899256');
   </script>
 
-  <!-- WhatsApp Chat -->
-  <script>
-    function openWhatsApp() {
-      window.open("https://wa.me/14037141286", "_blank");
-    }
-  </script>
-
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="hero">
-    <img src="Hero.jpg.PNG" alt="Calgary Real Estate" class="hero-image" />
-    <div class="overlay"></div>
+    <img src="Logo.png.PNG" class="logo" alt="Logo" />
     <nav>
-      <img src="Logo.png.PNG" alt="Prabh Gill Logo" class="logo" />
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="hero-text">
-      <h1>Calgary’s Trusted Realtor</h1>
-      <p>Luxury Real Estate | Buying | Selling | Investments</p>
-      <button onclick="openWhatsApp()">📲 Chat on WhatsApp</button>
+      <h1>Your<br />Trusted<br />Calgary<br />Realtor</h1>
+      <p>Guiding you home — buy, sell, and invest with confidence.</p>
     </div>
   </header>
 
-  <section id="services">
-    <h2>What I Offer</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Buy a Home</h3>
-        <p>Get expert advice and listings tailored to your needs.</p>
+  <section class="services" id="services">
+    <h2>How I Can Help</h2>
+    <div class="service-boxes">
+      <div class="box">
+        <h3>🏠 Buy a Home</h3>
+        <p>Neighbourhood expertise and honest advice—so you never overpay.</p>
       </div>
-      <div class="card">
-        <h3>Sell with Confidence</h3>
-        <p>Pro pricing, staging, and photography that gets results.</p>
+      <div class="box">
+        <h3>💼 Sell with Confidence</h3>
+        <p>Strategic pricing, pro photography, and marketing that moves offers.</p>
       </div>
-      <div class="card">
-        <h3>Free Home Value</h3>
-        <p>Know what your home is worth—no strings attached.</p>
+      <div class="box">
+        <h3>📊 Free Home Value</h3>
+        <p>Curious what your property is worth? Request a no-obligation report.</p>
       </div>
     </div>
   </section>
 
-  <section id="about">
+  <section class="about" id="about">
     <h2>Meet Prabh Gill</h2>
-    <img src="portrait-placeholder.jpg.JPG" alt="Prabh Gill Portrait" class="portrait" />
-    <p>I’m a full-time REALTOR® helping clients across Calgary and nearby communities make smart real estate moves with confidence and ease. Whether you're buying your first home or selling a luxury estate—I’ll guide you every step of the way.</p>
+    <img src="portrait-placeholder.jpg.JPG" alt="Prabh Gill" class="portrait" />
+    <p>I’m a full-time REALTOR® focused on delivering clear advice, data-driven pricing, and skilled negotiation. Whether you're buying your first home or upgrading, I make the process smooth and exceptional.</p>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
+  <section class="contact" id="contact">
+    <h2>Get in Touch</h2>
     <form name="contact" method="POST" data-netlify="true">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      <textarea name="message" placeholder="How can I help you?" required></textarea>
+      <textarea name="message" placeholder="How can I help?" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <p>📞 <a href="tel:+14037141286">403‑714‑1286</a> | 📧 <a href="mailto:pgprabhdeep@gmail.com">pgprabhdeep@gmail.com</a></p>
+
+    <div class="contact-links">
+      <p>
+        📞 <a href="tel:+14037141286">403‑714‑1286</a><br />
+        📧 <a href="mailto:pgprabhdeep@gmail.com">pgprabhdeep@gmail.com</a><br />
+        💬 <a href="https://wa.me/14037141286" target="_blank">Message me on WhatsApp</a>
+      </p>
+    </div>
   </section>
 
   <footer>
     © 2025 PrabhGillRealtor.ca
   </footer>
+
 </body>
 </html>

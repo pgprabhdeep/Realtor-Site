@@ -1,151 +1,98 @@
-/* ---------- color tokens ---------- */
-:root{
-  --navy:#0A1931;
-  --gold:#D4AF37;
-  --light:#f7f9fc;
-  --dark:#333333;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* ---------- reset ---------- */
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Montserrat',sans-serif;color:var(--dark);background:var(--light);line-height:1.6}
-img{max-width:100%;display:block}
-
-/* ---------- helpers ---------- */
-.container{width:min(92%,1200px);margin:auto}
-.section{padding:80px 0;text-align:center}
-.alt{background:#ffffff}
-.center{text-align:center}
-
-/* ---------- header ---------- */
-header{
-  background:var(--navy);
-  color:#ffffff;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-header .container{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:10px 0;
-}
-.logo{height:48px}
-nav ul{display:flex;gap:28px;list-style:none}
-nav a{
-  color:#ffffff;
-  text-decoration:none;
-  font-weight:500;
-}
-nav a:hover{color:var(--gold)}
-
-/* ---------- hero ---------- */
-.hero{position:relative}
-.hero-img{
-  height:50vh;
-  width:100%;
-  object-fit:cover;
-}
-.hero-text{
-  position:absolute;
-  top:50%;left:50%;
-  transform:translate(-50%,-50%);
-  text-align:center;
-  color:#ffffff;
-  text-shadow:0 2px 6px #000a;
-}
-.hero-text h1{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(2.2rem,6vw,3.2rem);
-}
-.btn{
-  background:var(--gold);
-  color:var(--navy);
-  padding:12px 26px;
-  border-radius:6px;
-  font-weight:700;
-  text-decoration:none;
-  display:inline-block;
-  margin-top:18px;
-  transition:.2s;
-}
-.btn:hover{background:#c6a536}
-
-/* ---------- services cards ---------- */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:24px;
-  margin-top:40px;
-}
-.card{
-  background:#ffffff;
-  border-radius:10px;
-  overflow:hidden;
-  box-shadow:0 4px 14px #00000018;
-  padding:30px 20px;
-}
-.service-icon{
-  margin-bottom:16px;
-  color:var(--gold);
-}
-.card h3{
-  font-family:'Playfair Display',serif;
-  margin-bottom:10px;
-  font-size:1.3rem;
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* ---------- about section ---------- */
-.about-flex{
-  display:flex;
-  flex-wrap:wrap;
-  gap:32px;
-  align-items:center;
-  text-align:left;
-  margin-top:20px;
-}
-.about-flex img{
-  width:320px;
-  border-radius:10px;
-}
-.about-flex h2{
-  font-family:'Playfair Display',serif;
-  margin-bottom:14px;
-}
-.about-flex p{margin-bottom:14px}
-
-/* ---------- contact form ---------- */
-form{
-  max-width:480px;
-  margin:0 auto 30px;
-  display:grid;
-  gap:16px;
-}
-input,textarea{
-  padding:12px;
-  border:2px solid var(--navy);
-  border-radius:6px;
-  font-size:1rem;
-}
-.contact-info{font-size:1.05rem}
-
-/* ---------- footer ---------- */
-footer{
-  background:var(--navy);
-  color:#ffffff;
-  text-align:center;
-  padding:24px 0;
-  font-size:.95rem;
-  margin-top:60px;
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
 }
 
-/* ---------- responsive tweaks ---------- */
-@media (max-width:768px){
-  nav ul{gap:18px;font-size:.92rem}
-  .about-flex{
-    flex-direction:column;
-    text-align:center;
-  }
-  .about-flex img{width:240px}
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.service {
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portrait {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
 }

@@ -3,53 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prabh Gill | Calgary Realtor</title>
-  <meta name="description" content="Top Calgary Realtor helping you buy, sell, and invest with confidence. Contact Prabh Gill for real estate in Calgary and surrounding areas." />
-  <meta name="keywords" content="Calgary Realtor, Prabh Gill, Real Estate Calgary, Buy Home Calgary, Sell Home Calgary, Calgary Real Estate Agent, Chestermere, Airdrie, Okotoks" />
-  <meta name="author" content="Prabh Gill">
-  <link rel="stylesheet" href="styles.css" />
-  
-  <!-- Google Ads Conversion Tag -->
+  <meta name="description" content="Top Calgary Realtor - Buy, sell, or invest in Calgary and nearby areas with Prabh Gill. Expert advice and trusted real estate service." />
+  <meta name="keywords" content="Calgary Realtor, Real Estate Calgary, Buy Home Calgary, Sell Property Calgary, Trusted Realtor Calgary" />
+  <meta name="author" content="Prabh Gill" />
+  <title>Prabh Gill | Calgary's Trusted Realtor</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Google Ads Conversion Tracking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17303899256"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'AW-17303899256');
   </script>
 
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Prabh Gill",
+    "image": "Logo.png.PNG",
+    "telephone": "+1-403-714-1286",
+    "email": "pgprabhdeep@gmail.com",
+    "url": "https://prabhgillrealtor.ca",
+    "areaServed": "Calgary, Alberta",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calgary",
+      "addressRegion": "AB",
+      "addressCountry": "CA"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <img src="Logo.png.PNG" alt="Prabh Gill Realtor Logo" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+
+  <header class="hero-section">
+    <img src="Hero.jpg.PNG" alt="Calgary Skyline" class="hero-image" />
     <div class="hero-text">
+      <img src="Logo.png.PNG" alt="Logo" class="logo" />
       <h1>Your Trusted Calgary Realtor</h1>
       <p>Guiding you home — buy, sell, and invest with confidence.</p>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <img src="Hero.jpg.PNG" alt="Calgary Skyline" class="hero-image" />
   </header>
 
   <section id="services" class="services">
     <h2>How I Can Help</h2>
-    <div class="cards">
+    <div class="card-container">
       <div class="card">
         <h3>Buy a Home</h3>
         <p>Local market knowledge and expert advice to get your dream home—without overpaying.</p>
       </div>
       <div class="card">
         <h3>Sell with Confidence</h3>
-        <p>Strategic pricing, pro photography, and top-tier marketing that gets offers fast.</p>
+        <p>Professional staging, photos, pricing, and marketing strategies to sell your home quickly and for top value.</p>
       </div>
       <div class="card">
-        <h3>Free Home Value</h3>
-        <p>Request a free home value report—no strings attached.</p>
+        <h3>Free Home Evaluation</h3>
+        <p>Discover your property's market value. No pressure. No obligation.</p>
       </div>
     </div>
   </section>
@@ -57,29 +85,34 @@
   <section id="about" class="about">
     <h2>Meet Prabh Gill</h2>
     <div class="about-content">
-      <img src="portrait-placeholder.jpg.JPG" alt="Prabh Gill Portrait" />
-      <p>I’m a full-time REALTOR® helping clients across Calgary and surrounding communities. My approach is based on honest advice, data-driven pricing, and skilled negotiation. Whether it’s your first home or your next investment—I’ll guide you every step of the way.</p>
+      <img src="portrait-placeholder.jpg.JPG" alt="Prabh Gill" class="portrait" />
+      <p>I'm a full-time REALTOR® serving Calgary and surrounding communities. My goal is to make your real estate experience smooth, stress-free, and successful. Whether you're buying your first home, selling your current one, or investing — I’ll guide you every step of the way.</p>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <h2>Get in Touch</h2>
-    <form name="contact" method="POST" data-netlify="true">
+    <form action="https://formspree.io/f/xyyqavjk" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      <textarea name="message" placeholder="How can I help?" required></textarea>
+      <textarea name="message" placeholder="How can I help you?" required></textarea>
       <button type="submit">Send Message</button>
     </form>
     <div class="contact-info">
-      <p><strong>📞</strong> <a href="tel:4037141286">403-714-1286</a></p>
-      <p><strong>📧</strong> <a href="mailto:pgprabhdeep@gmail.com">pgprabhdeep@gmail.com</a></p>
-      <p><strong>💬</strong> <a href="https://wa.me/14037141286" target="_blank">Message me on WhatsApp</a></p>
+      <a href="tel:+14037141286">📞 403-714-1286</a>
+      <a href="mailto:pgprabhdeep@gmail.com">📧 pgprabhdeep@gmail.com</a>
     </div>
   </section>
 
+  <!-- WhatsApp Chat -->
+  <a href="https://wa.me/14037141286" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    💬 Chat with Me
+  </a>
+
   <footer>
-    <p>© 2025 PrabhGillRealtor.ca</p>
+    © 2025 PrabhGillRealtor.ca
   </footer>
+
 </body>
 </html>
